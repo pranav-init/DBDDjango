@@ -1,0 +1,33 @@
+{% extends 'booktemplate.html' %}
+{%load static%}
+
+{%block readable%}
+<div class="post">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="note-legend border-bottom mb-4 " style="color:white;">
+                New Note!
+            </legend>
+            <p class="pagecontent note-message">Scroll down to see the notes you've already taken!</p>
+
+            <p class="pagecontent">Title of Your Note : {{form.noteTitle}}</p>
+            <br><br>
+            <p class="pagecontent">Write anything here : <br> {{form.noteContent}}</p>
+
+        </fieldset>
+        <div class="form-group">
+            <button class="notebut btn btn-outline-info" type="submit">Submit</button>
+        </div>
+    </form>
+
+</div>
+<br>
+<hr />
+<h1 class="pagetitle">Things you have noted down so far....</h1>
+{%for i in notes%}
+
+<p class="pagenotetitle">{{i.id}}) {{i.noteTitle}}</p>
+<p class="pagecontent">{{i.noteContent|linebreaksbr}}</p>
+{%endfor%}
+{%endblock readable%}
