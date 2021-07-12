@@ -27,7 +27,7 @@ SECRET_KEY = '(dfeisfkqclbwx)1&mdp)7hm31z8o8t73&1kw(7c_=7zkpi!r9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','dbddjango.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','djdigibook.herokuapp.com']
 
 
 # Application definition
