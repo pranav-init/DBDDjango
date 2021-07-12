@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Reader</title>
+    <link rel="stylesheet" href="{% static 'nice.css'%}">
+    <link rel="stylesheet" href="{% static 'nicetwo.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="sidenav">
+        <a class="filebarintro" href="http://127.0.0.1:8000/22/">
+            <legend>INDEX</legend>
+        </a>
+        {%block indexlinks%}
+
+        {%endblock indexlinks%}
+
+    </div>
+
+    <div class="sidenav2">
+        <a class="filebarintro" href="http://127.0.0.1:8000/22/">
+            <legend>RESOURCES</legend>
+        </a>
+        {%block resourcelinks%}
+
+        {%endblock resourcelinks%}
+
+    </div>
+
+    <div class="main">
+
+        <div class="topnav" id="myTopnav">
+            {%block naviclinks%}
+            {%endblock naviclinks%}
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        {%block readable%}
+        {%endblock readable%}
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
