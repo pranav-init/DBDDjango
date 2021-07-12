@@ -136,7 +136,6 @@ lxml==4.4.1
 Markdown==3.3.4
 MarkupSafe==2.0.0
 matplotlib==3.4.2
-menuinst==1.4.16
 minecart==0.3.0
 mistune==0.8.4
 mkl-fft==1.0.14
