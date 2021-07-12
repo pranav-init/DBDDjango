@@ -50,7 +50,6 @@ cryptography==2.7
 cx-Oracle==7.2.3
 cycler==0.10.0
 cymem==2.0.5
-Cython==0.29.13
 cytoolz==0.10.0
 dask==2.5.2
 decorator==4.4.0
@@ -137,7 +136,6 @@ lxml==4.4.1
 Markdown==3.3.4
 MarkupSafe==2.0.0
 matplotlib==3.4.2
-mccabe==0.6.1
 menuinst==1.4.16
 minecart==0.3.0
 mistune==0.8.4
